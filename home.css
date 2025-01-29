@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 100vh;
-    padding: 60px 9%;
+    padding: 60px 6%;
 }
 
 /* Text Content */
@@ -66,6 +66,7 @@ body {
     display: flex;
     align-items: center;
     gap: 19px;
+    margin-top: 20px;
 }
 
 /* Social Media Icons */
@@ -90,5 +91,3 @@ body {
 a {
     text-decoration: none;
 }
-
-

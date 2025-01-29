@@ -1,16 +1,16 @@
 /* Styling for the image container */
 .home-img .img-box {
     position: relative;
-    height: 30vw;
-    width: 30vw;
-    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    padding: 5px;
-    background: linear-gradient(135deg, #a9b3e0, #1f242d); /* Gradient background */
-    box-shadow: 0px 0px 20px rgba(126, 162, 230, 0.5); /* Glowing effect */
+    padding: 20px;
+    background: linear-gradient(135deg, #a9b3e0, #1f242d);
+    box-shadow: 0px 0px 20px rgba(126, 162, 230, 0.5);
 }
 
 /* Animated Border Light Effect */
@@ -21,7 +21,7 @@
     height: 110%;
     background: conic-gradient(transparent, #2d59b9, transparent, rgb(248, 248, 248));
     border-radius: 50%;
-    animation: rotateBorder 20s linear infinite; /* Smooth rotation */
+    animation: rotateBorder 20s linear infinite;
     z-index: 0;
 }
 
@@ -37,13 +37,13 @@
     align-items: center;
     z-index: 1;
     overflow: hidden;
-    border: 3px solid rgba(52, 121, 212, 0.3); /* Subtle border */
+    border: 3px solid rgba(52, 121, 212, 0.3);
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
 }
 
 /* Image Styling */
 .home-img .img-box .img-item img {
-    width: 85%;
+    width: 93%;
     height: auto;
     object-fit: cover;
     position: relative;
