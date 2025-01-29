@@ -1,0 +1,65 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+/* Logo Styling */
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #8a81c2;
+    letter-spacing: 2px;
+    transition: color 0.3s;
+}
+
+.navbar .logo:hover {
+    color: #fff;
+}
+/* Navigation Links */
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+/* Underline Hover Effect */
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #3db1f0;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+.navbar ul li a:hover::after,
+.navbar ul li.active a::after {
+    width: 100%;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: #c5c2f3;
+}
