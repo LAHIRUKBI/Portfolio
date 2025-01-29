@@ -8,22 +8,33 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Logo Styling */
-.navbar .logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #8a81c2;
-    letter-spacing: 3px;
-    transition: color 0.3s;
+
+/* Navbar Styling */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px;
 }
 
-.navbar .logo a {
-    text-decoration: none;
-    color: inherit;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
-.navbar .logo:hover {
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
     color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover, .navbar ul li.active a {
+    color: #00c6ff;
 }
 
 /* Home Section */
@@ -31,6 +42,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 100vh;
     padding: 60px 6%;
 }
@@ -41,6 +53,7 @@ body {
     font-weight: 700;
     line-height: 1.2;
     color: #c8c6cc;
+    margin-bottom: 15px;
 }
 
 .home-info h2 {
@@ -48,6 +61,7 @@ body {
     font-weight: 400;
     margin-top: -5px;
     color: #cccccc;
+    margin-bottom: 20px;
 }
 
 .home-info p {
@@ -55,6 +69,7 @@ body {
     line-height: 1.5;
     margin: 15px 0 30px;
     color: #e0e0e0;
+    max-width: 600px;
 }
 
 /* CTA Button */
@@ -107,4 +122,51 @@ body {
 
 a {
     text-decoration: none;
+}
+
+/* Image Styling */
+.home-img .img-box {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.home-img .img-box .img-item img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 114, 255, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-info h1 {
+        font-size: 40px;
+    }
+
+    .home-info h2 {
+        font-size: 20px;
+    }
+
+    .home-info p {
+        font-size: 15px;
+    }
+
+    .home-img .img-box {
+        max-width: 250px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .home-info .btn-sci {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
