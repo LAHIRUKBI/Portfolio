@@ -1,78 +1,92 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-body{
+body {
     background-color: #1f242d;
     font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
-}
-
-/* body */
-.home{
+/* Home Section */
+.home {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100vh;
-    padding: 60px 9% 0;
-    color: #fff;
-}
-.home-info h1{
-    font-size: 55px;
-}
-.home-info h2{
-    font-size: 20px;
-    margin-top:-10px;
+    padding: 60px 9%;
 }
 
-.home-info p{
-    font-size: 16px;
-    margin: 10px 0 25px;
+/* Text Content */
+.home-info h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #7cf03d;
 }
 
-.home-info .btn-sci{
+.home-info h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -5px;
+    color: #cccccc;
+}
+
+.home-info p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 15px 0 30px;
+    color: #e0e0e0;
+}
+
+/* CTA Button */
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: 2px solid #0072ff;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 114, 255, 0.5);
+}
+
+.btn:hover {
+    background: transparent;
+    color: #00c6ff;
+    box-shadow: 0px 0px 25px rgba(0, 198, 255, 0.8);
+}
+
+/* Social Icons */
+.home-info .btn-sci {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.btn{
-    display: inline-block;
-    padding: 10px 30px;
-    background: #43619a;
-    border: 2px solid #2964d1;
-    border-radius: 40px;
-    box-shadow: 0 0 10px;
-    font-size: 16px;
-    color: #feffff;
-    font-weight: 600;
-    transition: .5s;
-}
-
-.btn:hover{
-    background: transparent;
-    color: #2964d1;
-    box-shadow: none;
-}
-
-.home-info  .btn-sci .sci{
-    margin-left: 20px;
-}
-
-.home-info  .btn-sci .sci a{
+/* Social Media Icons */
+.home-info .btn-sci .sci a {
     display: inline-flex;
-    padding: 8px;
-    border: 2px solid #124fc1;
+    padding: 12px;
+    border: 2px solid #0072ff;
     border-radius: 50%;
-    font-size: 20px;
-    color: #f4f4f4;
-    margin: 0 8px;
-    transition:  .5s;
+    font-size: 22px;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 114, 255, 0.5);
 }
 
-.home-info  .btn-sci .sci a:hover{
-    background:#000000;
-    color: #f4f4f4;
-    box-shadow:  0 0 10px;
+.home-info .btn-sci .sci a:hover {
+    background: #0072ff;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 114, 255, 0.8);
+}
+
+a {
+    text-decoration: none;
 }
