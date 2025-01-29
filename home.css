@@ -8,6 +8,23 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Logo Styling */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #8a81c2;
+    letter-spacing: 3px;
+    transition: color 0.3s;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar .logo:hover {
+    color: #fff;
+}
 
 /* Home Section */
 .home {
