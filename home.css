@@ -140,8 +140,12 @@ a {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .home {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Puts the image on top */
         text-align: center;
+    }
+
+    .home-img {
+        margin-bottom: 20px; /* Adds spacing between image and text */
     }
 
     .home-info h1 {
@@ -170,3 +174,4 @@ a {
         gap: 15px;
     }
 }
+
