@@ -65,7 +65,7 @@ body {
 .home-info .btn-sci {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 19px;
 }
 
 /* Social Media Icons */
@@ -90,4 +90,5 @@ body {
 a {
     text-decoration: none;
 }
+
 

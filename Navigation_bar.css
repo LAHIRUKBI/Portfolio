@@ -8,15 +8,15 @@
     justify-self: space-between;
     align-items: center;
     z-index: 1000;
-
 }
 /* Logo Styling */
-.navbar .logo{
-    font-size: 30px;
-    font-weight: 700;
+.navbar .logo {
+    font-size: 18px; 
+    font-weight: 600; 
     color: #8a81c2;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     transition: color 0.3s;
+    white-space: nowrap;
 }
 
 .navbar .logo:hover {
