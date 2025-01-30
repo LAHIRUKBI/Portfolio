@@ -103,10 +103,10 @@ a {
 
 /* Education container layout */
 .education-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    justify-content: center;
 }
 
 /* Education card to hold all the items horizontally */
@@ -132,8 +132,8 @@ a {
 
 /* Hover effect for education items */
 .education-bag:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 15px 25px rgba(0, 114, 255, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 114, 255, 0.5);
 }
 
 /* Logo styling */
@@ -190,29 +190,25 @@ a {
 
 /* Skills container layout */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Skill Card */
 .skill-card {
-    background: #333;
-    padding: 30px;
+    background: linear-gradient(135deg, #222, #2c2f3d);
+    padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 5px 20px rgba(0, 114, 255, 0.3);
-    transition: all 0.3s ease;
-    background: linear-gradient(135deg, #333, #444);
-    flex-basis: calc(33% - 20px);
-    max-width: 320px;
-    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover Effect for Skill Cards */
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 114, 255, 0.5);
 }
 
 /* Skill Content */
@@ -229,6 +225,8 @@ a {
     font-weight: 600;
     text-transform: capitalize;
 }
+
+
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
@@ -275,5 +273,10 @@ a {
 
     .education-header p {
         font-size: 16px;
+    }
+    .education-bag img,
+    .education-item img,
+    .skill-card img {
+        max-width: 80%; /* Prevents images from taking full width */
     }
 }
