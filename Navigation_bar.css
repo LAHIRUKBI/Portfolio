@@ -1,18 +1,25 @@
+/* Navbar Styles */
 .navbar {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
-    padding: 20px 9%;
+    padding: 15px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3e7897;
+    background-color: #2a3d52;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #1e2a38; /* Darker shade on hover */
 }
 
 .menu-toggle {
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
     display: none;
@@ -20,7 +27,7 @@
 
 .nav-links {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     list-style: none;
     margin: 0;
     justify-content: center;
@@ -33,8 +40,9 @@
 .nav-links li a {
     font-size: 18px;
     font-weight: 500;
-    color: #ecf0f1;
+    color: #d9e2ea;
     text-transform: capitalize;
+    letter-spacing: 1px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -45,7 +53,7 @@
     bottom: -5px;
     width: 0;
     height: 3px;
-    background: #3db1f0;
+    background: #00bcd4;
     transition: all 0.4s ease;
     transform: translateX(-50%);
 }
@@ -57,12 +65,15 @@
 
 .nav-links li:hover a,
 .nav-links li.active a {
-    color: #c5c2f3;
+    color: #ffffff;
+    transform: translateY(-3px);
 }
 
+/* Mobile Menu Styles */
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
+        color: white;
     }
 
     .nav-links {
@@ -72,9 +83,10 @@
         top: 60px;
         left: 0;
         width: 100%;
-        background: #3e7897;
+        background: #2a3d52;
         text-align: center;
         padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
@@ -82,6 +94,16 @@
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 15px 0;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .nav-links li a:hover {
+        color: #00bcd4;
+        transform: translateY(2px);
     }
 }
