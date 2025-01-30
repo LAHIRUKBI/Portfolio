@@ -1,0 +1,113 @@
+/* Professional Section */
+.professional {
+    padding: 60px 5%; /* Adjusted for better spacing on all devices */
+    text-align: center;
+    background: linear-gradient(135deg, #1f242d, #262f3d);
+    border-radius: 15px;
+}
+
+.professional-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0, 114, 255, 0.5);
+    margin-bottom: 50px;
+}
+
+/* Professional Card Container - Adjusted Columns Layout */
+.professional-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Decreased the minimum width of the cards */
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px; /* Restrict maximum width for larger screens */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Individual Professional Item (Card) */
+.professional-bag {
+    background: linear-gradient(135deg, #222, #2c2f3d);
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 114, 255, 0.4);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect for Professional Card */
+.professional-bag:hover {
+    transform: scale(1.05); /* Slightly larger lift effect */
+    box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6); /* Larger shadow on hover */
+}
+
+/* Professional Logo */
+.professional-logo {
+    max-width: 100px; /* Reduced logo size */
+    margin-bottom: 15px; /* Reduced space below logo */
+    transition: all 0.3s ease;
+}
+
+.professional-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Card Title Styling */
+.professional-bag h2 {
+    font-size: 22px; /* Reduced title size */
+    color: #00c6ff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Card Description Styling */
+.professional-bag p {
+    font-size: 16px; /* Reduced font size for better compactness */
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Card Institution Styling */
+.professional-bag strong {
+    color: #00c6ff;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .professional {
+        padding: 30px 3%;
+    }
+
+    .professional-bag {
+        padding: 20px;
+    }
+
+    .professional-bag h2 {
+        font-size: 20px; /* Smaller text for mobile */
+    }
+
+    .professional-bag p {
+        font-size: 14px; /* Smaller description text */
+    }
+
+    .professional-header h1 {
+        font-size: 32px;
+    }
+
+    .professional-logo {
+        max-width: 90px; /* Smaller logos on mobile */
+    }
+
+    /* Adjust layout for mobile */
+    .professional-container {
+        grid-template-columns: 1fr; /* Stacks the items in a single column for mobile */
+    }
+}

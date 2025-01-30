@@ -1,0 +1,88 @@
+/* Main education section */
+.education {
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #1f242d, #262f3d);
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0px 5px 30px rgba(0, 114, 255, 0.1);
+}
+
+/* Header for the education section */
+.education-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #444;
+}
+
+.education-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px rgba(0, 114, 255, 0.5);
+}
+
+.education-header p {
+    font-size: 18px;
+    color: #cccccc;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+/* Container for all education items */
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Individual education item */
+.education-item {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 114, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #333, #444);
+    box-shadow: 0px 5px 20px rgba(0, 114, 255, 0.3);
+}
+
+/* Hover effect for education items */
+.education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6);
+}
+
+/* Logo styling */
+.education-item img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    border-radius: 0%;
+    transition: all 0.3s ease;
+    object-fit: contain;
+}
+
+/* Hover effect for logo */
+.education-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Title styling */
+.education-item h2 {
+    font-size: 26px;
+    color: #00c6ff;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center; 
+}
+
+/* Paragraph and details styling */
+.education-item p {
+    font-size: 18px;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-top: 10px;
+}
