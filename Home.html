@@ -12,7 +12,8 @@
 <body>
 
     <nav class="navbar">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
             <li class="active"><a href="Home.html">Portfolio</a></li>
             <li><a href="Education.html">Education</a></li>
             <li><a href="Project.html">Projects</a></li>
@@ -56,6 +57,10 @@
           showCursor: false // Hides the blinking cursor
         });
       });
+
+      function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
     </script>
 </body>
 </html>

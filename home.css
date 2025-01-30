@@ -1,4 +1,4 @@
-/* Import Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 body {
@@ -7,34 +7,6 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
-}
-
-/* Navbar Styling */
-.navbar {
-    background-color: #2c3e50;
-    padding: 15px;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar ul li {
-    margin: 0 20px;
-}
-
-.navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.navbar ul li a:hover, .navbar ul li.active a {
-    color: #00c6ff;
 }
 
 /* Home Section */
@@ -124,28 +96,23 @@ a {
     text-decoration: none;
 }
 
-/* Image Styling */
-.home-img .img-box {
-    max-width: 400px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.home-img .img-box .img-item img {
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px rgba(0, 114, 255, 0.5);
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .home {
-        flex-direction: column-reverse; /* Puts the image on top */
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding-top: 80px; /* Adjusted to push content below the navbar */
     }
 
     .home-img {
-        margin-bottom: 20px; /* Adds spacing between image and text */
+        margin-bottom: 20px;
+    }
+
+    .home-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .home-info h1 {
@@ -167,11 +134,13 @@ a {
     .btn {
         font-size: 16px;
         padding: 10px 30px;
+        margin-top: 10px; /* Adjusted to keep the button close to the profile image */
     }
 
     .home-info .btn-sci {
         flex-direction: column;
         gap: 15px;
+        margin-top: 15px;
     }
 }
 

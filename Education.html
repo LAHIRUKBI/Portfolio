@@ -9,13 +9,20 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
             <li><a href="Home.html">Portfolio</a></li>
-            <li class="active"><a href="Education.html">Education</a></li>
+            <li  class="active"><a href="Education.html">Education</a></li>
             <li><a href="Project.html">Projects</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 
     <section class="education">
         <div class="education-header">
