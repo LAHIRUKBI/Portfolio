@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Navigation_bar.css">
     <link rel="stylesheet" href="Project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav class="navbar">
@@ -20,47 +22,70 @@
     </nav>
 
     <div class="projects-section">
-        <h1 class="section-title">✨ My Creative Works ✨</h1>
+        <h1 class="section-title">My Projects</h1>
         <p class="section-subtitle">A collection of projects that showcase my passion for coding and innovation.</p>
         <div class="projects-container">
-            
+            <!-- Project 1 -->
             <div class="project-card">
                 <img src="../images/smartbin.jpg" alt="SmartBIN">
                 <div class="project-content">
                     <h2>♻️ SmartBIN - AI-Powered Waste Management</h2>
                     <p>An intelligent waste management system that streamlines garbage collection, optimizes routes, and promotes recycling awareness.</p>
-                    <p><strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB</p>
-                    <a href="https://github.com/LAHIRUKBI" class="view-btn" target="_blank">🔗 View on GitHub</a>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/LAHIRUKBI/smartBIN-ITP" class="view-btn" target="_blank">🔗 View on GitHub</a>
                 </div>
             </div>
 
+            <!-- Project 2 -->
             <div class="project-card">
                 <img src="images/bookstore.jpg" alt="Book Store">
                 <div class="project-content">
                     <h2>📚 Online Bookstore - Your Digital Library</h2>
                     <p>A full-fledged e-commerce platform designed for book lovers, featuring seamless browsing, ordering, and inventory management.</p>
-                    <p><strong>Tech Stack:</strong> React, Node.js, Express.js, MongoDB</p>
-                    <a href="https://github.com/LAHIRUKBI" class="view-btn" target="_blank">🔗 View on GitHub</a>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="https://github.com/LAHIRUKBI/Book-Store" class="view-btn" target="_blank">🔗 View on GitHub</a>
                 </div>
             </div>
 
+            <!-- Project 3 -->
             <div class="project-card">
                 <img src="images/property.png" alt="Property Management">
                 <div class="project-content">
                     <h2>🏡 Property Hub - Smart Real Estate Management</h2>
                     <p>A modern property management system that helps landlords and tenants connect with ease, using advanced search and automation.</p>
-                    <p><strong>Tech Stack:</strong> Java, JavaScript, MySQL, HTML, CSS</p>
-                    <a href="https://github.com/LAHIRUKBI" class="view-btn" target="_blank">🔗 View on GitHub</a>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="https://github.com/LAHIRUKBI/Second-Year-Web" class="view-btn" target="_blank">🔗 View on GitHub</a>
                 </div>
             </div>
 
+            <!-- Project 4 -->
             <div class="project-card">
                 <img src="images/mobile.png" alt="Mobile Apps">
                 <div class="project-content">
-                    <h2>📱 Innovative Mobile Apps</h2>
+                    <h2>📱Mobile Apps</h2>
                     <p>Designed and developed high-performance mobile applications including Get-Note, Medicine Management, and SmartBIN mobile app.</p>
-                    <p><strong>Tech Stack:</strong> Android Studio, Kotlin, Firebase</p>
-                    <a href="https://github.com/LAHIRUKBI" class="view-btn" target="_blank">🔗 View on GitHub</a>
+                    <div class="tech-stack">
+                        <span>Android Studio</span>
+                        <span>Kotlin</span>
+                        <span>Firebase</span>
+                    </div>
+                    <a href="https://github.com/LAHIRUKBI/Mobile-Application-Development-Online-Shopping-App-" class="view-btn" target="_blank">🔗 View on GitHub</a>
                 </div>
             </div>
         </div>
@@ -71,5 +96,32 @@
             document.querySelector(".nav-links").classList.toggle("active");
         }
     </script>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Lahiru Illangasinghe</h3>
+            <p>Passionate about web and mobile development, creating innovative solutions.</p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-social">
+                
+                <a href="https://github.com/LAHIRUKBI" target="_blank" class="social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/lahiru-i/" target="_blank" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:lahiruilangasinha@gmail.com" target="_blank" class="social-icon"><i class='bx bx-envelope'></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="Home.html" class="footer-link">Home</a>
+                <a href="Education.html" class="footer-link">Education</a>
+                <a href="Project.html" class="footer-link">Projects</a>
+                <a href="Contact.html" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Lahiru Illangasinghe. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
