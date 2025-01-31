@@ -1,79 +1,77 @@
 /* Main Skills Section */
 .skills-section {
     padding: 60px 5%;
-    background: linear-gradient(135deg, #1f242d, #262f3d);
-    border-radius: 10px;
+    background: linear-gradient(135deg, #1f1f2e, #2a2d3a);
+    border-radius: 12px;
 }
 
-
+/* Header Styling */
 .skills-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
 .skills-header h1 {
-    font-size: 40px; 
+    font-size: 38px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 10px rgba(0, 114, 255, 0.5);
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 10px rgba(0, 114, 255, 0.6);
 }
 
 /* Skills container layout */
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
     justify-content: center;
     text-align: center;
 }
 
 /* Skill Card */
 .skill-card {
-    background: linear-gradient(135deg, #222, #2c2f3d);
-    padding: 20px;
+    background: linear-gradient(135deg, #23232e, #303449);
+    padding: 25px;
     border-radius: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 114, 255, 0.2);
+    border-left: 4px solid #00c6ff;
 }
 
 /* Hover Effect for Skill Cards */
 .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 10px 30px rgba(0, 114, 255, 0.5);
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 114, 255, 0.5);
 }
 
 /* Skill Content */
-.skill-content {
-    font-size: 18px;
-    color: #cccccc;
-    line-height: 1.6;
-}
-
 .skill-card h2 {
-    font-size: 26px;
+    font-size: 24px;
     color: #00c6ff;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: 600;
     text-transform: capitalize;
 }
 
+.skill-card p {
+    font-size: 18px;
+    color: #dddddd;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .skills-section {
-        padding: 30px 3%;
+        padding: 30px 5%;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
     }
 
     .skill-card {
-        flex-basis: 100%;
         padding: 20px;
-    }
-
-    .skill-card h2 {
-        font-size: 22px;
-    }
-
-    .skill-content {
-        font-size: 16px;
     }
 
     .skills-header h1 {

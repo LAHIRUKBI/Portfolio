@@ -1,11 +1,21 @@
 /* Professional Section */
 .professional {
-    padding: 60px 5%; /* Adjusted for better spacing on all devices */
-    text-align: center;
+    padding: 60px 5%;
     background: linear-gradient(135deg, #1f242d, #262f3d);
     border-radius: 15px;
+    text-align: center;
 }
 
+
+.professional-card{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header */
 .professional-header h1 {
     font-size: 40px;
     font-weight: 700;
@@ -16,71 +26,71 @@
     margin-bottom: 50px;
 }
 
-/* Professional Card Container - Adjusted Columns Layout */
+/* Professional Container */
 .professional-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Decreased the minimum width of the cards */
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    max-width: 800px; /* Restrict maximum width for larger screens */
-    margin: 0 auto; /* Center the content */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Individual Professional Item (Card) */
+/* Professional Card */
 .professional-bag {
     background: linear-gradient(135deg, #222, #2c2f3d);
-    padding: 20px; /* Reduced padding */
-    border-radius: 15px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 10px 20px rgba(0, 114, 255, 0.4);
     text-align: center;
     transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 280px; /* Adjust width for horizontal layout */
+    flex-shrink: 0;
 }
 
-/* Hover Effect for Professional Card */
+/* Hover Effect */
 .professional-bag:hover {
-    transform: scale(1.05); /* Slightly larger lift effect */
-    box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6); /* Larger shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6);
 }
 
-/* Professional Logo */
+/* Badge Image */
 .professional-logo {
-    max-width: 100px; /* Reduced logo size */
-    margin-bottom: 15px; /* Reduced space below logo */
+    max-width: 100px;
+    margin-bottom: 15px;
     transition: all 0.3s ease;
 }
 
 .professional-logo:hover {
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.1);
 }
 
-/* Card Title Styling */
+/* Title */
 .professional-bag h2 {
-    font-size: 22px; /* Reduced title size */
+    font-size: 22px;
     color: #00c6ff;
     margin-bottom: 15px;
-    font-weight: 600;
-    text-transform: capitalize;
+    font-weight: 700;
 }
 
-/* Card Description Styling */
+/* Description */
 .professional-bag p {
-    font-size: 16px; /* Reduced font size for better compactness */
-    color: #cccccc;
+    font-size: 16px;
+    color: #b0b0b0;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* Card Institution Styling */
+/* Institution Highlight */
 .professional-bag strong {
     color: #00c6ff;
 }
 
-/* Responsive Design for Mobile */
+
+
+
+/* Responsive Design */
 @media (max-width: 768px) {
     .professional {
         padding: 30px 3%;
@@ -91,23 +101,22 @@
     }
 
     .professional-bag h2 {
-        font-size: 20px; /* Smaller text for mobile */
+        font-size: 18px;
     }
 
     .professional-bag p {
-        font-size: 14px; /* Smaller description text */
+        font-size: 14px;
     }
 
     .professional-header h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .professional-logo {
-        max-width: 90px; /* Smaller logos on mobile */
+        max-width: 90px;
     }
 
-    /* Adjust layout for mobile */
     .professional-container {
-        grid-template-columns: 1fr; /* Stacks the items in a single column for mobile */
+        grid-template-columns: 1fr;
     }
 }
