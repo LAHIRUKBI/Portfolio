@@ -7,9 +7,9 @@
 }
 
 
-.professional-card{
+.professional-card {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     text-align: center;
