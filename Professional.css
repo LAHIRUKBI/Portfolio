@@ -6,7 +6,6 @@
     text-align: center;
 }
 
-
 .professional-card {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +14,6 @@
     text-align: center;
 }
 
-/* Header */
 .professional-header h1 {
     font-size: 40px;
     font-weight: 700;
@@ -26,7 +24,6 @@
     margin-bottom: 50px;
 }
 
-/* Professional Container */
 .professional-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +33,7 @@
     margin: 0 auto;
 }
 
-/* Professional Card */
+
 .professional-bag {
     background: linear-gradient(135deg, #222, #2c2f3d);
     padding: 25px;
@@ -45,17 +42,15 @@
     box-shadow: 0px 10px 20px rgba(0, 114, 255, 0.4);
     text-align: center;
     transition: all 0.3s ease-in-out;
-    width: 280px; /* Adjust width for horizontal layout */
+    width: 280px; 
     flex-shrink: 0;
 }
 
-/* Hover Effect */
 .professional-bag:hover {
     transform: scale(1.05);
     box-shadow: 0px 15px 30px rgba(0, 114, 255, 0.6);
 }
 
-/* Badge Image */
 .professional-logo {
     max-width: 100px;
     margin-bottom: 15px;
@@ -66,7 +61,6 @@
     transform: scale(1.1);
 }
 
-/* Title */
 .professional-bag h2 {
     font-size: 22px;
     color: #00c6ff;
@@ -74,7 +68,6 @@
     font-weight: 700;
 }
 
-/* Description */
 .professional-bag p {
     font-size: 16px;
     color: #b0b0b0;
@@ -82,13 +75,9 @@
     margin-bottom: 10px;
 }
 
-/* Institution Highlight */
 .professional-bag strong {
     color: #00c6ff;
 }
-
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -96,8 +85,14 @@
         padding: 30px 3%;
     }
 
+    .professional-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .professional-bag {
-        padding: 20px;
+        width: 90%;
+        max-width: 350px;
     }
 
     .professional-bag h2 {
@@ -114,9 +109,5 @@
 
     .professional-logo {
         max-width: 90px;
-    }
-
-    .professional-container {
-        grid-template-columns: 1fr;
     }
 }
