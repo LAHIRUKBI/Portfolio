@@ -6,8 +6,179 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
 a {
     text-decoration: none;
+}
+
+.contact {
+    text-align: center;
+    padding: 80px 5%;
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #00c6ff;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #cccccc;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.bio {
+    text-align: left;
+    margin: 30px 0;
+    color: #cccccc;
+    font-size: 18px;
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.bio strong {
+    font-weight: 700;
+    color: #00c6ff;
+}
+
+.bio .expertise {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.bio .expertise div {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin: 20px 0;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+.contact-info div {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.contact-info i {
+    color: #00c6ff;
+    margin-right: 8px;
+    font-size: 22px;
+}
+
+.social-links {
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+.social-links a {
+    display: inline-flex;
+    padding: 12px;
+    border: 2px solid #0072ff;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 8px;
+    transition: 0.4s ease-in-out;
+}
+
+.social-links a:hover {
+    background: #0072ff;
+    color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 114, 255, 0.8);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .contact {
+        padding: 50px 10%;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .bio {
+        font-size: 16px;
+    }
+
+    .contact-info div {
+        font-size: 16px;
+    }
+
+    .social-links a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        font-size: 28px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
 }
