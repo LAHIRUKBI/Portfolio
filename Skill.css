@@ -1,14 +1,19 @@
 /* Main Skills Section */
 .skills-section {
     padding: 60px 5%;
-    background: linear-gradient(135deg, #1f1f2e, #2a2d3a);
+    background: linear-gradient(135deg, #1b1b29, #252839);
     border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Header Styling */
 .skills-header {
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .skills-header h1 {
@@ -17,7 +22,9 @@
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    text-shadow: 2px 2px 10px rgba(0, 114, 255, 0.6);
+    text-shadow: 2px 2px 15px rgba(0, 114, 255, 0.7);
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 /* Skills container layout */
@@ -37,12 +44,17 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0px 5px 15px rgba(0, 114, 255, 0.2);
     border-left: 4px solid #00c6ff;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 /* Hover Effect for Skill Cards */
 .skill-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 12px 30px rgba(0, 114, 255, 0.5);
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0px 15px 35px rgba(0, 114, 255, 0.5);
+    border-left: 6px solid #00c6ff;
 }
 
 /* Skill Content */
@@ -52,12 +64,47 @@
     margin-bottom: 10px;
     font-weight: 600;
     text-transform: capitalize;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-.skill-card p {
+.skill-card .skill-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: left;
+}
+
+.skill-card .skill-item {
     font-size: 18px;
     color: #dddddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Responsive Design */
